@@ -36,11 +36,18 @@ function nextSequence() {
 }
 
 
-$(document).one('click', function () {
+$(document).click(function (e) {
+  e.preventDefault()
+  e.stopPropagation()
+  if (gameStart === true) {
+    return;
+  }
   nextSequence();
 });
 
-$(".btn").click(function () {
+$(".btn").click(function (e) {
+  e.preventDefault()
+  e.stopPropagation()
   if (gameStart === false || clickBtn === true) {
     return;
   }

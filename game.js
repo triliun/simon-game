@@ -36,7 +36,7 @@ function nextSequence() {
 }
 
 
-$(document).keydown(function () {
+$(document).one('click', function () {
   if (gameStart === true) {
     return;
   }

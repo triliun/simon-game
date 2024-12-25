@@ -37,9 +37,6 @@ function nextSequence() {
 
 
 $(document).one('click', function () {
-  if (gameStart === true) {
-    return;
-  }
   nextSequence();
 });
 

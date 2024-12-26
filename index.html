@@ -1,42 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simon Game</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon Game</title>
+    <meta
+      name="description"
+      content="Simon Game is my first project using JavaScript after 2 days (~21.58 hours) of learning. It tests memory with color and sound patterns. Built with HTML, CSS, and jQuery, it may not be perfect, but I'm proud of it as my first step into DOM, animations, and event handling."
+    />
+    <meta name="title" content="Simon Game" />
+    <meta
+      name="description"
+      content=" Simon Game is my first project using JavaScript after 2 days (~21.58 hours) of learning. It tests memory with color and sound patterns. Built with HTML, CSS, and jQuery, it may not be perfect, but I'm proud of it as my first step into DOM, animations, and event handling. "
+    />
 
-<body>
-  <h1 id="level-title">Press A Key to Start</h1>
-  <div class="container">
-    <div class="row">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/triliun/simon-game" />
+    <meta property="og:title" content="Simon Game" />
+    <meta
+      property="og:description"
+      content=" Simon Game is my first project using JavaScript after 2 days (~21.58 hours) of learning. It tests memory with color and sound patterns. Built with HTML, CSS, and jQuery, it may not be perfect, but I'm proud of it as my first step into DOM, animations, and event handling. "
+    />
+    <meta
+      property="og:image"
+      content="https://github.com/triliun/simon-game/blob/a0e60b54dcd5bf8d8b250c32045c56de69046304/image.png"
+    />
 
-      <div type="button" id="green" class="btn green">
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://github.com/triliun/simon-game"
+    />
+    <meta property="twitter:title" content="Simon Game" />
+    <meta
+      property="twitter:description"
+      content=" Simon Game is my first project using JavaScript after 2 days (~21.58 hours) of learning. It tests memory with color and sound patterns. Built with HTML, CSS, and jQuery, it may not be perfect, but I'm proud of it as my first step into DOM, animations, and event handling. "
+    />
+    <meta
+      property="twitter:image"
+      content="https://github.com/triliun/simon-game/blob/a0e60b54dcd5bf8d8b250c32045c56de69046304/image.png"
+    />
 
+    <link href="https://github.com/triliun/simon-game" rel="canonical" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="container">
+      <div class="container-helper">
+        <div class="flex">
+          <h1 id="level_title">Click Anywhere To Start</h1>
+          <i id="sound_button" class="sound on"></i>
+        </div>
+        <div class="row">
+          <div type="button" id="green" class="btn green"></div>
+          <div type="button" id="red" class="btn red"></div>
+          <div type="button" id="yellow" class="btn yellow"></div>
+          <div type="button" id="blue" class="btn blue"></div>
+          <div type="button" id="orange" class="btn orange"></div>
+          <div type="button" id="gray" class="btn gray"></div>
+          <div type="button" id="purple" class="btn purple"></div>
+          <div type="button" id="pink" class="btn pink"></div>
+        </div>
       </div>
-
-      <div type="button" id="red" class="btn red">
-
-      </div>
-    </div>
-
-    <div class="row">
-
-      <div type="button" id="yellow" class="btn yellow">
-
-      </div>
-      <div type="button" id="blue" class="btn blue">
-
-      </div>
-
-    </div>
-
-  </div>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
-  <script src="game.js"></script>
-</body>
-
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="game.js"></script>
+  </body>
 </html>

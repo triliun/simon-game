@@ -9,7 +9,7 @@ let soundStatus = false;
 
 function playsound(nameSound) {
   if (!soundStatus) {
-    const sound = new Audio(`/assets/sounds/${nameSound}.mp3`);
+    const sound = new Audio(`assets/sounds/${nameSound}.mp3`);
     sound.play();
   }
 }

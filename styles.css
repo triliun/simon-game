@@ -39,14 +39,14 @@ i {
 
 .sound.on::after {
   display: block;
-  content: url(/assets/svg/sound-on.svg);
+  content: url(assets/svg/sound-on.svg);
   width: 28px;
   aspect-ratio: 1/1;
 }
 
 .sound.mute::after {
   display: block;
-  content: url(/assets/svg/sound-mute.svg);
+  content: url(assets/svg/sound-mute.svg);
   width: 28px;
   aspect-ratio: 1/1;
 }

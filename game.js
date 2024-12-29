@@ -47,6 +47,36 @@ function nextSequence() {
   }
 }
 
+$(document).click(function (e) {
+  e.preventDefault()
+  e.stopPropagation()
+  if (gameStart === true) {
+    return;
+  }
+  nextSequence();
+});
+
+$(".btn").click(function (e) {
+  e.preventDefault()
+  e.stopPropagation()
+  if (gameStart === false || clickBtn === true) {
+    return;
+  }
+  var userChosenColour = $(this).attr("id");
+  $(`#${userChosenColour}`).fadeOut(100).fadeIn(100);
+  // $(`#${userChosenColour}`).addClass("pressed");
+  userClickedPattern.push(userChosenColour);
+  playSound(userChosenColour);
+
+  setTimeout(function () {
+    $(`#${userChosenColour}`).removeClass("pressed");
+  }, 100);
+
+  var currentLevel = userClickedPattern.length - 1;
+
+  checkAnswer(currentLevel);
+});
+
 function checkAnswer(currentLevel) {
   if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
     if (gamePattern.length === userClickedPattern.length) {
